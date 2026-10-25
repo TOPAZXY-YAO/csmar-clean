@@ -1,0 +1,2 @@
+winsorize_limits: [0.05, 0.95]
+winsorize_cols: [roa, lev]

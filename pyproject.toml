@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csmar-clean"
+version = "0.1.0"
+description = "CSMAR data cleaning CLI with traceable cleaning log"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0", "PyYAML>=6.0"]
+
+[project.scripts]
+csmar-clean = "csmar_clean.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["csmar_clean*"]
+
+[tool.setuptools.package-data]
+csmar_clean = ["default_rules.yaml"]

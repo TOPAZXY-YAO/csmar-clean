@@ -1,0 +1,12 @@
+id_col: Stkcd
+year_col: year
+st_col: ST
+name_col: Stknm
+industry_col: Indcd
+list_date_col: Listd
+drop_financial: true
+financial_prefix: J
+drop_st: true
+drop_ipo_year: true
+winsorize_limits: [0.01, 0.99]
+winsorize_exclude: [Stkcd, year]
