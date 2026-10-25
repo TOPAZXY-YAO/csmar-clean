@@ -12,15 +12,9 @@ csmar-clean examples/demo/demo_data.dta    # 清洗
 
 （Windows 下把 `python3` 换成 `python`。）
 
-跑完打开 `examples/demo/demo_data_clean_cleaning_log.md`——一份可直接粘进论文"样本筛选"小节的中文 Markdown 日志：
+跑完打开 `examples/demo/demo_data_clean_cleaning_log.md`——一份可直接粘进论文"样本筛选"小节的中文 Markdown 日志（下图为真实渲染效果）：
 
-```markdown
-| 步骤 | 规则 | 剔除前行数 | 剔除后行数 | 剔除行数 | 剔除比例 | 说明 |
-|---|---|---|---|---|---|---|
-| 1 | 剔除金融业 | 40 | 32 | 8 | 20.00% | Indcd 以 J 开头的金融业观测 |
-| 2 | 剔除 ST | 32 | 24 | 8 | 25.00% | ST 字段标记为非 0 的观测 |
-| 3 | 剔除 IPO 当年 | 24 | 23 | 1 | 4.17% | 观测年份等于上市年份（Listd）的 IPO 当年观测 |
-```
+![demo 清洗日志渲染效果](examples/demo/demo_data_clean_cleaning_log.png)
 
 先看看规则将怎么执行、不写任何文件：
 
